@@ -22,7 +22,6 @@
     .describtion { 
       font-size: 14px;
       width:80%;
-      margin: 0 auto ;
       line-height: 1.6;
       color:$MediumGray;
     }
@@ -89,6 +88,10 @@
       .title { 
         font-size: 2rem;
         flex-basis: 350px;
+      }
+      .describtion{ 
+
+        margin: 0 auto ;
       }
     }
   }
