@@ -1,0 +1,29 @@
+@use './settings' as * ;
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap');
+
+
+* { 
+  font-family: 'Epilogue', sans-serif;
+  box-sizing: border-box;
+}
+
+body { 
+    font-size: $FontSize;
+    margin: 0;
+    background-color: $AlmostWhite
+  }
+
+button { 
+  background-color: transparent;
+  border: 0;
+  cursor: pointer;
+}
+
+ul { 
+  list-style: none;
+}
+
+a { 
+  font-size: 14px;
+  text-decoration: none;
+}

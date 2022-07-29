@@ -1,0 +1,95 @@
+@use './settings' as * ;
+
+
+.landing { 
+  padding-top: 20px;
+  padding-bottom: 40px;
+  .container { 
+  width: 80%;
+  margin: 0 auto ;
+  display: flex;
+  justify-content: space-between;
+
+  
+  
+  .text { 
+    padding-right:  20px;
+    width: 450px;
+    flex-shrink:1 ;
+    .title { 
+      font-size: 4rem;
+    }
+    .describtion { 
+      font-size: 14px;
+      width:80%;
+      margin: 0 auto ;
+      line-height: 1.6;
+      color:$MediumGray;
+    }
+    .learn-more {
+      margin-top: 20px; 
+      padding: 20px;
+      border-radius: 20px;
+      width: 150px;
+      background-color: $AlmostBlack;
+      color: $AlmostWhite;
+      border: 2px solid $AlmostBlack;
+      transition: .3s;
+      &:hover { 
+        background-color: transparent;
+        color:$AlmostBlack;
+        font-weight: 500;
+      }
+    }
+
+    .clients {
+      margin-top: 70px;
+      display:flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+  }
+  .img { 
+    // flex-basis: 50%;
+    height: 460px;
+    width: 345px;
+    flex-shrink: 0;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url('images/image-hero-desktop.png');
+
+    // max-width 776
+
+
+  }
+
+}
+}
+
+
+
+@media (max-width:836px) {
+  .img { 
+    background-image: none;
+    background-image: url('images/image-hero-mobile.png');
+    flex-shrink: 1;
+    width: 100%;
+  }
+  
+  .container { 
+    width:820px;
+    flex-wrap: wrap-reverse;
+    align-items: center;
+  
+    .text { 
+      text-align: center;
+      width:100%;
+      flex-grow: 1;
+      .title { 
+        font-size: 2rem;
+        flex-basis: 350px;
+      }
+    }
+  }
+}

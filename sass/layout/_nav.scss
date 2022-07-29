@@ -1,0 +1,74 @@
+@use './settings' as * ;
+
+@mixin center { 
+  display:flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+nav { 
+  @include center;
+  justify-content: start;
+  height: 80px;
+  padding: 12px;
+  
+  
+  .logo { 
+    font-size: 2rem;
+    color: $AlmostBlack;
+    font-weight: 700;
+    margin: 20px
+  }
+
+  .links { 
+    @include center;
+    justify-content:space-between;
+    flex-grow: 1;
+    padding:10px;
+    
+    .menu{ 
+      padding:10px;
+      @include center;
+      display:flex;
+      gap: 35px;
+      li{
+        a {
+          color:$MediumGray;
+          transition: .3s;
+        
+        &:hover { 
+          color:$AlmostBlack;
+          
+          svg { 
+            color:$AlmostBlack;
+            
+          }
+        }
+      }
+    }
+  }
+  .auth { 
+    button  { 
+      padding: 10px 15px;
+      color: $MediumGray;
+      margin: 0 10px;
+      transition: .3s;
+      &:hover { 
+        color:$AlmostBlack;
+      }
+      &:nth-child(2){ 
+          border: 2px solid $MediumGray;
+          border-radius: 10px;
+          &:hover { 
+            background-color: $AlmostBlack;
+            color: $AlmostWhite;
+            border: 2px solid $AlmostBlack;
+      
+
+        }
+        }
+      }
+    }
+  } 
+}
